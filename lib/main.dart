@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nft_app/pages/home/homepage.dart';
 import 'package:nft_app/pages/onboard/onboard.dart';
 
 void main() {
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
       statusBarColor: const Color(0xff051821), // Color for Android
-      statusBarBrightness: Brightness.light // Dark status bar -- for IOS.
+      statusBarBrightness: Brightness.dark // Dark status bar -- for IOS.
   ));
 }
 
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      home: const Onboard(),
+      // home: const Onboard(),
+      home: const HomePage(),
     );
   }
 }

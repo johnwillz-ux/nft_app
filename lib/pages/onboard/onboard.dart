@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nft_app/pages/home/homepage.dart';
 import 'package:nft_app/pages/widgets/image_list_veiw.dart';
 import 'package:nft_app/utils/nft_color.dart';
 import 'package:slider_button/slider_button.dart';
@@ -55,8 +56,11 @@ class _OnboardState extends State<Onboard> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('Exclussive \nDigital \nCollectibles',
-                          style: TextStyle(fontSize: 50, color: Colors.white, fontWeight: FontWeight.bold)),
+                      const Text('Exclusive \nDigital \nCollectibles',
+                          style: TextStyle(
+                              fontSize: 50,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold)),
                       const SizedBox(
                         height: 10,
                       ),
@@ -76,7 +80,12 @@ class _OnboardState extends State<Onboard> {
                         child: SliderButton(
                           action: () {
                             ///Do something here
-                            Navigator.of(context).pop();
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomePage(),
+                              ),
+                            );
                           },
                           label: const Text(
                             "Get Started",
