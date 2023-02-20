@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nft_app/pages/home/homepage.dart';
+import 'package:nft_app/pages/homepage.dart';
 import 'package:nft_app/pages/widgets/image_list_veiw.dart';
 import 'package:nft_app/utils/nft_color.dart';
 import 'package:slider_button/slider_button.dart';

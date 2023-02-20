@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:nft_app/widget/intro_image_widget.dart';
+import 'package:nft_app/pages/widgets/intro_image_widget.dart';
 
 class ImageListView extends StatefulWidget {
   final int startIndex;
