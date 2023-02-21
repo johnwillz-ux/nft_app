@@ -1,6 +1,8 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:nft_app/pages/widgets/chips.dart';
 import 'package:nft_app/pages/widgets/nft_card_list.dart';
+import 'package:nft_app/pages/widgets/title.dart';
 import 'package:nft_app/utils/nft_color.dart';
 
 class HomePage extends StatelessWidget {
@@ -93,89 +95,27 @@ class HomePage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Chip(
-                    label: Text('All'),
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 18),
-                    backgroundColor: NftColors.grey,
-                  ),
-                  Chip(
-                    label: Text(
-                      'Trending',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 18),
-                    backgroundColor: Colors.black54,
-                  ),
-                  Chip(
-                    label: Text(
-                      'Art Work',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 18),
-                    backgroundColor: Colors.black54,
-                  ),
-                  Chip(
-                    label: Text(
-                      'Collectibles',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 18),
-                    backgroundColor: Colors.black54,
-                  ),
-                ],
-              ),
+              const NftChips(),
               const SizedBox(
                 height: 25,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
-                    'All Collection',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    'See All',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
+              const NftTitle(
+                title: 'All Collection',
+                seeAll: 'See All',
               ),
-              // SizedBox(
-              //   height: 20,
-              // ),
-              // NftCards(bidPrice: '28.01', nftImage: 'lib/assets/images/nft4.jpg',),
-
-              Expanded(child: const NftImageList()),
+              const Expanded(child: NftImageList()),
+              const SizedBox(
+                height: 20,
+              ),
+              const NftTitle(
+                title: 'Top Sellers',
+                seeAll: 'See All',
+              ),
               const SizedBox(
                 height: 20,
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
-                    'Top Sellers',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    'See All',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
-              ),
 
-              const SizedBox(
-                height: 20,
-              ),
 
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -193,16 +133,16 @@ class HomePage extends StatelessWidget {
                           Row(
                             children: [
                               Badge(
-                                badgeContent: Icon(
+                                badgeContent: const Icon(
                                   Icons.verified,
                                   color: Colors.blue,
                                 ),
                                 position: BadgePosition.bottomEnd(),
-                                badgeStyle: BadgeStyle(
+                                badgeStyle: const BadgeStyle(
                                   shape: BadgeShape.twitter,
                                   badgeColor: Colors.transparent,
                                 ),
-                                child: CircleAvatar(
+                                child: const CircleAvatar(
                                   radius: 25,
                                   backgroundImage: AssetImage(
                                     'lib/assets/images/user.jpg',
@@ -252,6 +192,10 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+
+
+
+
             ],
           ),
         ),

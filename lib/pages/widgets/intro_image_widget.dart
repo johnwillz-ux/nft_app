@@ -20,7 +20,6 @@ class _NftIntroImageState extends State<NftIntroImage> {
           image: DecorationImage(
               image: AssetImage(widget.image), fit: BoxFit.cover),
         ),
-        // child: Image(image: AssetImage(image)),
       ),
     );
   }
