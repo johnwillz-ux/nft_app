@@ -7,7 +7,6 @@ import 'package:nft_app/pages/onboard.dart';
 void main() {
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-      statusBarColor: const Color(0xff051821), // Color for Android
       statusBarBrightness: Brightness.dark // Dark status bar -- for IOS.
   ));
 }
@@ -15,7 +14,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
 
@@ -27,8 +26,8 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      // home: const Onboard(),
-      home: const HomePage(),
+      home: const Onboard(),
+      // home: const HomePage(),
     );
   }
 }

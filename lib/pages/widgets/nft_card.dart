@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class NftCards extends StatelessWidget {
-  const NftCards({Key? key}) : super(key: key);
+  final String bidPrice;
+  final String nftImage;
+
+  const NftCards({Key? key, required this.bidPrice, required this.nftImage}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,11 +12,16 @@ class NftCards extends StatelessWidget {
       height: 400,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        image: const DecorationImage(
-            image: AssetImage('lib/assets/images/nft2.jpg'), fit: BoxFit.cover),
+        image:  DecorationImage(
+            image: AssetImage(nftImage), fit: BoxFit.cover),
       ),
       child: Padding(
         padding: const EdgeInsets.all(10),
+
+
+
+
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -24,7 +32,7 @@ class NftCards extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   decoration: BoxDecoration(
-                      color: Colors.white24,
+                      color: Colors.black45,
                       borderRadius: BorderRadius.circular(30)),
                   child: const Icon(
                     Icons.favorite_border,
@@ -35,7 +43,7 @@ class NftCards extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Colors.white24,
+                  color: Colors.black45,
                   borderRadius: BorderRadius.circular(40)),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -55,19 +63,19 @@ class NftCards extends StatelessWidget {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text(
+                          children:  [
+                            const Text(
                               'Current Bid',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w200),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              '28,04 ETH',
-                              style: TextStyle(
+                              bidPrice,
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20),

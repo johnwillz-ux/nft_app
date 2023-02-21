@@ -63,8 +63,8 @@ class _ImageListViewState extends State<ImageListView> {
 }
 
 final List nftIntroImages = [
-  ['lib/assets/images/nft1.jpg'],
-  ['lib/assets/images/nft2.jpg'],
+  ['lib/assets/images/nft10.jpg'],
+  ['lib/assets/images/nft5.jpg'],
   ['lib/assets/images/nft3.jpg'],
   ['lib/assets/images/nft4.jpg'],
   ['lib/assets/images/nft5.jpg'],
