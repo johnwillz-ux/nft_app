@@ -9,10 +9,6 @@ class NftIntroImage extends StatefulWidget {
 }
 
 class _NftIntroImageState extends State<NftIntroImage> {
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,8 +17,8 @@ class _NftIntroImageState extends State<NftIntroImage> {
         height: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
-          image: DecorationImage(image: AssetImage(widget.image), fit: BoxFit.cover),
-
+          image: DecorationImage(
+              image: AssetImage(widget.image), fit: BoxFit.cover),
         ),
         // child: Image(image: AssetImage(image)),
       ),
