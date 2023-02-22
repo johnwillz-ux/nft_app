@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nft_app/pages/homepage.dart';
 import 'package:nft_app/pages/onboard.dart';
 
 void main() {
@@ -27,7 +26,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const Onboard(),
-      // home: const HomePage(),
     );
   }
 }

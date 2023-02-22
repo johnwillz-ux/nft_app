@@ -4,7 +4,8 @@ class NftCards extends StatelessWidget {
   final String bidPrice;
   final String nftImage;
 
-  const NftCards({Key? key, required this.bidPrice, required this.nftImage}) : super(key: key);
+  const NftCards({Key? key, required this.bidPrice, required this.nftImage})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,16 +13,10 @@ class NftCards extends StatelessWidget {
       height: 400,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        image:  DecorationImage(
-            image: AssetImage(nftImage), fit: BoxFit.cover),
+        image: DecorationImage(image: AssetImage(nftImage), fit: BoxFit.cover),
       ),
       child: Padding(
         padding: const EdgeInsets.all(10),
-
-
-
-
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -63,7 +58,7 @@ class NftCards extends StatelessWidget {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children:  [
+                          children: [
                             const Text(
                               'Current Bid',
                               style: TextStyle(

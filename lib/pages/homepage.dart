@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                       const CircleAvatar(
                         radius: 28,
                         backgroundImage: AssetImage(
-                          'lib/assets/images/user.jpg',
+                          'lib/assets/images/userimg.jpg',
                         ),
                       ),
                       const SizedBox(
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
-                            'Johnwillz',
+                            'Izzy Lad',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold),
@@ -114,9 +114,6 @@ class HomePage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-
-
-
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -192,10 +189,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-
-
-
-
             ],
           ),
         ),

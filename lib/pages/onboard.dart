@@ -30,9 +30,6 @@ class _OnboardState extends State<Onboard> {
                   ImageListView(startIndex: 3),
                 ],
               )),
-
-          //Infoscreen
-
           Positioned(
               bottom: 0,
               child: Container(
