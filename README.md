@@ -11,13 +11,9 @@ Star⭐ the repo if you like what you see😉.
 
 ## 📸 SnapShots
 
-<img src="ss/1.png"/>
+
 
 | 1 | 2|
-|------|-------|
-|<img src="ss/2.png" width="400">|<img src="ss/3.png" width="400">|
-
-| 3 | 4|
 |------|-------|
 |<img src="screen1.jpeg" width="400">|<img src="screen2.jpeg" width="400">|
 
