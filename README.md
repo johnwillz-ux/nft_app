@@ -1,6 +1,6 @@
 # 🖼️ NFT APP [![PRs Welcome](https://img.shields.io/github/repo-size/johnwillz-ux/nft_app?color=yellow&style=flat-square)](https://github.com/johnwillz-ux) <a href="https://github.com/Solido/awesome-flutter"><img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" /></a>
 
-Flutter representation of a NFT Market place app UI inspiration found on Dribble.
+NFT Market place app UI inspiration found on Dribble.
 
 
 Give this repo a <img src="https://emojis.slackmojis.com/emojis/images/1643514134/931/star.gif?1643514134" width="30"/> and lets connect 😁.
