@@ -11,13 +11,9 @@ Star⭐ the repo if you like what you see😉.
 
 ## 📸 SnapShots
 
-
-
 | 1 | 2|
 |------|-------|
 |<img src="screen1.jpeg" width="400">|<img src="screen2.jpeg" width="400">|
-
-
 
 
 ## Let's Connect
